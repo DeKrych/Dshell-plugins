@@ -1,7 +1,7 @@
 # Dshell-plugins
 This is an unofficial library of plugins written by Penn State students for [Dshell](https://github.com/USArmyResearchLab/Dshell), the U.S. Army Research Lab's network forensic analysis framework.
 
-For general quesitons regarding Dshell, please see their [README.md](https://github.com/USArmyResearchLab/Dshell/blob/master/README.md)
+For general questions regarding Dshell, please see their [README.md](https://github.com/USArmyResearchLab/Dshell/blob/master/README.md)
 
 ## Prerequisites
 * [Dshell](https://github.com/USArmyResearchLab/Dshell), U.S. ARL's Dshell
