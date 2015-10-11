@@ -16,7 +16,7 @@ For general questions regarding Dshell, please see their [README.md](https://git
   * [pypcap](https://code.google.com/p/pypcap/), New BSD License
 
 ## Setup
-After installing Dshell, these additional decoders can downloaded and moved to dshell/decoders/misc/
+After installing Dshell, these additional decoders can be downloaded and moved to &lt;install-location&gt;/decoders/misc/
 * To ensure that these decoders are now available for use within Dshell:
   * `./dshell` which runs Dshell (You should see the Dshell> prompt)
   * `decode -l` lists the available decoders
