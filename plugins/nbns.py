@@ -45,23 +45,31 @@ Examples:
 
         decode -d nbns /2014-12-08-traffic-analysis-exercise.pcap
 
-            OUTPUT:
-    nbns 2014-12-08 18:19:13  192.168.204.137:137   --    192.168.204.2:137   ** Transaction ID:0xb480     Info:NB_NAME_QUERY        Client Hostname:WPAD             Client MAC:00:0c:29:9d:b8:6d    **
-    nbns 2014-12-08 18:19:14  192.168.204.137:137   --    192.168.204.2:137   ** Transaction ID:0xb480     Info:NB_NAME_QUERY        Client Hostname:WPAD             Client MAC:00:0c:29:9d:b8:6d    **
-    nbns 2014-12-08 18:19:16  192.168.204.137:137   --    192.168.204.2:137   ** Transaction ID:0xb480     Info:NB_NAME_QUERY        Client Hostname:WPAD             Client MAC:00:0c:29:9d:b8:6d    **
-    nbns 2014-12-08 18:19:17  192.168.204.137:137   --  192.168.204.255:137   ** Transaction ID:0xb480     Info:NB_NAME_QUERY        Client Hostname:WPAD             Client MAC:00:0c:29:9d:b8:6d    **
-    nbns 2014-12-08 18:19:18  192.168.204.137:137   --  192.168.204.255:137   ** Transaction ID:0xb480     Info:NB_NAME_QUERY        Client Hostname:WPAD             Client MAC:00:0c:29:9d:b8:6d    **
-    nbns 2014-12-08 18:19:19  192.168.204.137:137   --  192.168.204.255:137   ** Transaction ID:0xb480     Info:NB_NAME_QUERY        Client Hostname:WPAD             Client MAC:00:0c:29:9d:b8:6d    **
-    nbns 2014-12-08 18:20:24  192.168.204.137:137   --    192.168.204.2:137   ** Transaction ID:0xb481     Info:NB_REFRESH           Client Hostname:38NTRGDFQKR-PC   Client MAC:00:0c:29:9d:b8:6d    **
-    nbns 2014-12-08 18:20:26  192.168.204.137:137   --    192.168.204.2:137   ** Transaction ID:0xb481     Info:NB_REFRESH           Client Hostname:38NTRGDFQKR-PC   Client MAC:00:0c:29:9d:b8:6d    **
-    nbns 2014-12-08 18:20:27  192.168.204.137:137   --    192.168.204.2:137   ** Transaction ID:0xb481     Info:NB_REFRESH           Client Hostname:38NTRGDFQKR-PC   Client MAC:00:0c:29:9d:b8:6d    **
-    nbns 2014-12-08 18:22:24  192.168.204.137:137   --    192.168.204.2:137   ** Transaction ID:0xb482     Info:NB_REFRESH           Client Hostname:38NTRGDFQKR-PC   Client MAC:00:0c:29:9d:b8:6d    **
-    nbns 2014-12-08 18:22:26  192.168.204.137:137   --    192.168.204.2:137   ** Transaction ID:0xb482     Info:NB_REFRESH           Client Hostname:38NTRGDFQKR-PC   Client MAC:00:0c:29:9d:b8:6d    **
-    nbns 2014-12-08 18:22:27  192.168.204.137:137   --    192.168.204.2:137   ** Transaction ID:0xb482     Info:NB_REFRESH           Client Hostname:38NTRGDFQKR-PC   Client MAC:00:0c:29:9d:b8:6d    **
-    nbns 2014-12-08 18:24:24  192.168.204.137:137   --    192.168.204.2:137   ** Transaction ID:0xb483     Info:NB_REFRESH           Client Hostname:38NTRGDFQKR-PC   Client MAC:00:0c:29:9d:b8:6d    **
-    nbns 2014-12-08 18:24:26  192.168.204.137:137   --    192.168.204.2:137   ** Transaction ID:0xb483     Info:NB_REFRESH           Client Hostname:38NTRGDFQKR-PC   Client MAC:00:0c:29:9d:b8:6d    **
-    nbns 2014-12-08 18:24:27  192.168.204.137:137   --    192.168.204.2:137   ** Transaction ID:0xb483     Info:NB_REFRESH           Client Hostname:38NTRGDFQKR-PC   Client MAC:00:0c:29:9d:b8:6d    **
-""",
+          OUTPUT (first few packets):
+            nbns 2014-12-08 18:19:13  192.168.204.137:137   --    192.168.204.2:137   ** 
+	            Transaction ID:	0xb480   
+	            Info:		NB_NAME_QUERY    
+	            Client Hostname:	WPAD             
+	            Client MAC:		00:0c:29:9d:b8:6d 
+            **
+            nbns 2014-12-08 18:19:14  192.168.204.137:137   --    192.168.204.2:137   ** 
+	            Transaction ID:	0xb480   
+	            Info:		NB_NAME_QUERY    
+	            Client Hostname:	WPAD             
+	            Client MAC:		00:0c:29:9d:b8:6d 
+            **
+            nbns 2014-12-08 18:19:16  192.168.204.137:137   --    192.168.204.2:137   ** 
+	            Transaction ID:	0xb480   
+	            Info:		NB_NAME_QUERY    
+	            Client Hostname:	WPAD             
+	            Client MAC:		00:0c:29:9d:b8:6d 
+            **
+            nbns 2014-12-08 18:19:17  192.168.204.137:137   --  192.168.204.255:137   ** 
+	            Transaction ID:	0xb480   
+	            Info:		NB_NAME_QUERY    
+	            Client Hostname:	WPAD             
+	            Client MAC:		00:0c:29:9d:b8:6d 
+  """,
                             filter='udp and port 137',
                             author='dek',
                             )
