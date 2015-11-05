@@ -23,9 +23,9 @@ class DshellDecoder(dshell.UDPDecoder):
                             name='nbns',
                             description='extract client information from NBNS traffic',
                             longdescription="""
-The nbns decoder will extract the Transaction ID, Protocol Info, Client Hostname, 
-and Client MAC address from every UDP NBNS packet found in the given pcap
-using port 137.  UDP is the standard transport protocol for NBNS traffic.
+The nbns (NetBIOS Name Service) decoder will extract the Transaction ID, Protocol Info, 
+Client Hostname, and Client MAC address from every UDP NBNS packet found in the given 
+pcap using port 137.  UDP is the standard transport protocol for NBNS traffic.
 This filter pulls pertinent information from NBNS packets.
 
 Examples:
