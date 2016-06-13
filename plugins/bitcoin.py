@@ -16,7 +16,7 @@ class DshellDecoder(dshell.TCPDecoder):
     def __init__(self):
         dshell.TCPDecoder.__init__(self,
                             name='bitcoin',
-                            description='Extract Bitcoin traffic',
+                            description='Extract Bitcoin traffic, including Stratum mining protocol (pooled) traffic',
                             longdescription='''
 The bitcoin decoder will extract any Bitcoin traffic attempting to find and output: 
     Client/server IP addresses, src/dst port numbers, MAC addresses of the machines
@@ -24,7 +24,7 @@ The bitcoin decoder will extract any Bitcoin traffic attempting to find and outp
     packet payload sizes in KB, and the Network type 
     ('Bitcoin Main' if Bitcoin data traffic)  
 
-Additionally for stratum mining, it will attempt to extract:
+Additionally for Stratum mining, it will attempt to extract:
     Bitcoin miner being used, transaction methods used in each connection 
     (mining.notify, mining.authorize, mining.get_transaction, mining.submit, etc.), 
     User ID (Auth ID) used to access the Bitcoin mining pool, and possibly the password 
@@ -37,7 +37,7 @@ Additionally for stratum mining, it will attempt to extract:
     (The generation transactions and merkle tree branches are only optionally outputted 
      to a file: See Example (3) below)
  
-    Note (1): The first time that all of this stratum mining information is 
+    Note (1): The first time that all of this Stratum mining information is 
               collected (per connection), all of the packets decoded after this 
               point from within the same connection (same exact sip, dip, sport, dport) 
               will continue to output the same collection of information since it 
@@ -217,7 +217,7 @@ Examples:
             self.NOTIFY = False
 
         # If able to pull the Bitcoin Pool User ID (sometimes a wallet ID)
-        # Also if the transcation is mining.notify (seen in stratum mining)
+        # Also if the transcation is mining.notify (seen in Stratum mining)
         #   then output the current Block information
         if (self.size and self.smac and self.dmac and 
                 self.miners.get(conn.addr, None) and self.methods.get(conn.addr, None) and self.auth_ids.get(conn.addr, None)
@@ -235,7 +235,7 @@ Examples:
 
 
         # If able to pull the Bitcoin Pool User ID (sometimes a wallet ID)
-        # Also if the transcation is mining.notify (seen in stratum mining) and the user
+        # Also if the transcation is mining.notify (seen in Stratum mining) and the user
         #   specifies that they want to save the fields used to generate the block transaction 
         #   (gen_tx1, gen_tx2 (hashes with scriptPubKeys), merkle tree branches), then
         # output all information possible, and write the gentx information to the specified file

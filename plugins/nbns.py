@@ -21,7 +21,7 @@ class DshellDecoder(dshell.UDPDecoder):
     def __init__(self):
         dshell.UDPDecoder.__init__(self,
                             name='nbns',
-                            description='extract client information from NBNS traffic',
+                            description='Extract client information from NBNS traffic',
                             longdescription="""
 The nbns (NetBIOS Name Service) decoder will extract the Transaction ID, Protocol Info, 
 Client Hostname, and Client MAC address from every UDP NBNS packet found in the given 
