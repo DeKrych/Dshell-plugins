@@ -1,5 +1,6 @@
 # Dshell-plugins
-This is an unofficial library of plugins for [Dshell](https://github.com/USArmyResearchLab/Dshell), the U.S. Army Research Lab's network forensic analysis framework.
+The Bitcoin and NBNS decoders are now included in the U.S. Army Research Lab's [Dshell](https://github.com/USArmyResearchLab/Dshell) repository.
+This is an unofficial library of plugins for Dshell, the U.S. Army Research Lab's network forensic analysis framework.
 
 For general questions regarding Dshell, please see their [README.md](https://github.com/USArmyResearchLab/Dshell/blob/master/README.md)
 
